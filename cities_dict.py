@@ -6,4 +6,7 @@ def cities_dict(cities: list):
     Returns:
         dict: dictionary with keys ordered by city name
     """
-    return cities
+    res = {}
+    for k, v in enumerate(cities):
+        res[k] = v
+    return res
